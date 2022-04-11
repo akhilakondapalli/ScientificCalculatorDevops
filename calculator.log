@@ -10,3 +10,7 @@
 11/Apr/2022:17:08:42 610 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 10.0output : 3.1622776601683795
 11/Apr/2022:17:08:47 801 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 99.0output : 9.9498743710662
 11/Apr/2022:17:08:55 503 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 49.0output : 7.0
+11/Apr/2022:17:33:13 802 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 25.0output : 5.0
+11/Apr/2022:17:33:13 823 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 9.0output : 3.0
+11/Apr/2022:17:33:13 841 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 144.0output : 12.0
+11/Apr/2022:17:33:13 855 [Calculator.java] [INFO] Calculator.Calculator - SquareRoot - input : 1000.0output : 31.622776601683793
