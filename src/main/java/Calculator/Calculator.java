@@ -1,13 +1,17 @@
+package Calculator;
 
 import java.util.Scanner;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 public class Calculator {
+    private static final Logger logger = LogManager.getLogger(Calculator.class);
     private static final Scanner input = new Scanner(System.in);
 
     public static void main(String[] args){
         int choice;
 
-        System.out.println("Welcome to Scientific Calculator.Please choose any option.\n");
+        System.out.println("Welcome to Scientific Calculator.Calculator.Please choose any option.\n");
 
         Calculator calculator = new Calculator();
 
@@ -22,9 +26,7 @@ public class Calculator {
                     System.out.println("Enter any positive number to calculate Square root. \n");
                     double number1;
                     number1 = input.nextDouble();
-                    double result;
-                    result = calculator.squareRoot(number1);
-                    System.out.println("The square root of " + number1 + " is " + result);
+                    System.out.println("The square root of " + number1 + " is " + calculator.squareRoot(number1));
                     break;
                 default:
                     return;
@@ -36,7 +38,10 @@ public class Calculator {
     }
 
     public double squareRoot(double number){
-        return Math.sqrt(number);
+        double result;
+        result = Math.sqrt(number);
+        logger.info("SquareRoot - input : "+ number + "output : " + result);
+        return result;
     }
 
 }
